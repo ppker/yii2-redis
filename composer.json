@@ -21,7 +21,7 @@
         "php": "^7.4 || ^8.0",
         "ext-openssl": "*",
         "yiisoft/yii2": "~2.0.50",
-        "predis/predis": "^v2.3.0|^3.0"
+        "predis/predis": "^v2.3.0|3.3.*"
     },
     "require-dev": {
         "phpunit/phpunit": "9.*",
@@ -56,7 +56,9 @@
         }
     },
     "scripts": {
-        "phpcbf": "./vendor/bin/phpcbf -q src/ tests/",
-        "phpcs": "./vendor/bin/phpcs -q src/ tests/"
+        "cs": "./vendor/bin/phpcs -q src tests",
+        "cs-fix": "./vendor/bin/phpcbf -q src tests",
+        "static": "./vendor/bin/phpstan --memory-limit=-1",
+        "tests": "./vendor/bin/phpunit"
     }
 }
