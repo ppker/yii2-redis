@@ -67,8 +67,8 @@ parameters:
 			path: src/ActiveQuery.php
 
 		-
-			message: '#^Method yii\\redis\\ActiveQuery\:\:all\(\) should return array\<yii\\redis\\ActiveRecord\> but returns array\<yii\\db\\ActiveRecord\>\.$#'
-			identifier: return.type
+			message: '#^Method yii\\redis\\ActiveQuery\:\:all\(\) return type has no value type specified in iterable type array\.$#'
+			identifier: missingType.iterableValue
 			count: 1
 			path: src/ActiveQuery.php
 
