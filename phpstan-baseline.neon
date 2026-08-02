@@ -1213,7 +1213,7 @@ parameters:
 			path: tests/RedisCacheTest.php
 
 		-
-			message: '#^Call to method PHPUnit\\Framework\\Assert::assertTrue\(\) with true and ''Reconnection…'' will always evaluate to true\.$#'
+			message: '#^Call to method PHPUnit\\Framework\\Assert\:\:assertTrue\(\) with true and ''Reconnection…'' will always evaluate to true\.$#'
 			identifier: method.alreadyNarrowedType
 			count: 1
 			path: tests/RedisConnectionTest.php
